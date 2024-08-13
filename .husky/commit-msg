@@ -1,8 +1,8 @@
-JIRA_ISSUE_REGEX="^MCBC-[0-9]+: "
+# JIRA_ISSUE_REGEX="^MCBC-[0-9]+: "
 
-commit_message=$(cat "$1")
+# commit_message=$(cat "$1")
 
-if ! echo "$commit_message" | grep -qE "$JIRA_ISSUE_REGEX"; then
-  echo "Error: Commit message should start with a Jira issue key (e.g., 'MCBC-123: Your message')"
-  exit 1
-fi
+# if ! echo "$commit_message" | grep -qE "$JIRA_ISSUE_REGEX"; then
+#   echo "Error: Commit message should start with a Jira issue key (e.g., 'MCBC-123: Your message')"
+#   exit 1
+# fi

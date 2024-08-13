@@ -1,13 +1,13 @@
-/* mcbcTypscript/frontend/src/styles/components/header.scss */
+/* mcbcTypescript/frontend/src/styles/components/header.scss */
 
 .header {
   align-items: center;
+  align-self: flex-start;
   background-color: $color-white;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   left: 0;
-  position: fixed;
   right: 0;
   top: 0;
 }
