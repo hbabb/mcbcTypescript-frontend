@@ -1,4 +1,4 @@
-// mcbc-react\commitlint.config.cjs
+// mcbcTypescript\commitlint.config.cjs
 /** @type {import('commitlint').Config} */
 export default {
   extends: ['@commitlint/config-conventional'],

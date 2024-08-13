@@ -1,21 +1,23 @@
 // frontend/src/styles/pages/originalApp.scss
 
 // #root {
-//   max-width: 1280px;
-//   margin: 0 auto;
-//   padding: 2rem;
-//   text-align: center;
+//   max-width: 1280px;max-widthmax-widthmax-widthmax-widthmarginmargin
+//   padding: 2rem;paddingpaddingpaddingpaddingmax-widthmax-width
+//   margin: 0 auto;marginmarginmarginmarginpaddingpadding
+//   text-align: center;text-aligntext-aligntext-aligntext-aligntext-aligntext-align
 // }
 
 .logo {
   height: 6em;
   padding: 1.5em;
-  will-change: filter;
   transition: filter 300ms;
+  will-change: filter;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -24,6 +26,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

@@ -1,65 +1,67 @@
 /* mcbcTypescript/frontend/src/styles/global.scss */
 // Import variables and mixins
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 // Import components
-@import "./components/button.scss";
-@import "./components/footer.scss";
-@import "./components/header.scss";
-@import "./components/mcbcLogo.scss";
-@import "./components/lhpLogo.scss";
+@import './components/button';
+@import './components/footer';
+@import './components/header';
+@import './components/mcbcLogo';
+@import './components/lhpLogo';
 
 // Import pages
-@import "./pages/home.scss";
-@import "./pages/about.scss";
-@import "./pages/contact.scss";
-@import "./pages/staff.scss";
-@import "./pages/prayer.scss";
-@import "./pages/missions.scss";
-@import "./pages/events.scss";
-@import "./pages/blogs.scss";
-@import "./pages/eventPost.scss";
-@import "./pages/blogPost.scss";
-@import "./pages/originalApp.scss";
+@import './pages/home';
+@import './pages/about';
+@import './pages/contact';
+@import './pages/staff';
+@import './pages/prayer';
+@import './pages/missions';
+@import './pages/events';
+@import './pages/blogs';
+@import './pages/eventPost';
+@import './pages/blogPost';
+@import './pages/originalApp';
 
 // Global styles
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  color: rgb(255 255 255 / 87%);
+  color-scheme: light dark;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
-  border: 4px solid green;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
 }
 
 html,
 body {
-  height: 100svh;
-  width: 100svw;
-  display: flex;
-  place-items: center;
   border: 4px solid red;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 // Media queries
 @media (prefers-color-scheme: light) {
   :root {
+    background-color: #fff;
     color: #213547;
-    background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }

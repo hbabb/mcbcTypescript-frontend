@@ -2,7 +2,7 @@
 /** @type {import('react-router').RouteObject} */
 
 import React, { Suspense } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 // lazy loading
 const Home = React.lazy(() => import('../pages/home'))
@@ -18,22 +18,20 @@ const OriginalApp = React.lazy(() => import('../pages/originalApp'))
 
 const AppRouter: React.FC = () => {
   return (
-    <Router>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/staff" element={<Staff />} />
-          <Route path="/prayer" element={<Prayer />} />
-          <Route path="/missions" element={<Missions />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/eventPost" element={<EventPost />} />
-          <Route path="/blogPost" element={<BlogPost />} />
-          <Route path="/originalApp" element={<OriginalApp />} />
-        </Routes>
-      </Suspense>
-    </Router>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/staff" element={<Staff />} />
+        <Route path="/prayer" element={<Prayer />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/eventPost" element={<EventPost />} />
+        <Route path="/blogPost" element={<BlogPost />} />
+        <Route path="/originalApp" element={<OriginalApp />} />
+      </Routes>
+    </Suspense>
   )
 }
 

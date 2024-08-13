@@ -1,8 +1,9 @@
 // mcbc-react-ts\vite.config.js
 /** @type {import('vite').UserConfig} */
 import path from 'node:path'
-import react from '@vitejs/plugin-react-swc'
+
 import svgr from '@svgr/rollup'
+import react from '@vitejs/plugin-react-swc'
 import autoprefixer from 'autoprefixer'
 import { defineConfig } from 'vite'
 import EnvironmentPlugin from 'vite-plugin-environment'

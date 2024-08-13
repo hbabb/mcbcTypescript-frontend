@@ -1,20 +1,16 @@
 /* mcbcTypescript/frontend/src/styles/variables.scss */
-// Import fonts (src/assets/fonts)
-@import "../assets/fonts/googleFonts.scss";
-
-// Define spacing variables
 
 // Define color variables
-$color-white: #ffffff;
 $color-lightgray: #c4d4dc;
 $color-lightblue: #0000a8;
 $color-darkblue: #262262;
+$color-white: #fff;
 $color-black: #242526;
 
 // Define font variables
-$font-roboto: "Roboto", sans-serif;
-$font-allura: "Allura", cursive;
-$font-lobster: "Lobster", cursive;
-$font-josefin-sans: "Josefin Sans", sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+$font-allura: 'Allura', cursive;
+$font-lobster: 'Lobster', cursive;
+$font-josefin-sans: 'Josefin Sans', sans-serif;
 
 // Define media query variables

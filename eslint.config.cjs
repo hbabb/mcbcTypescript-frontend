@@ -1,69 +1,58 @@
+// mcbcTypescript/eslint.config.cjs
+
 const eslintPluginReact = require('eslint-plugin-react');
 const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
 const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y');
 const eslintPluginImport = require('eslint-plugin-import');
 const eslintPluginUnicorn = require('eslint-plugin-unicorn');
+const typescriptEslintParser = require('@typescript-eslint/parser');
 
-/** @type {import('eslint').Linter.Config} */
-const config = {
-  root: true,
-  env: {
-    browser: true,
-    es2021: true,
-  },
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
+/** @type {import('eslint').FlatConfig[]} */
+const config = [
+  {
+    files: ['**/*.{ts,tsx,js,jsx}'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      parser: typescriptEslintParser,
     },
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-  },
-  plugins: [
-    'react',
-    'react-hooks',
-    'jsx-a11y',
-    'import',
-    'unicorn',
-    '@typescript-eslint',
-  ],
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:jsx-a11y/recommended',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-    'plugin:unicorn/recommended',
-    'plugin:@typescript-eslint/recommended',
-  ],
-  rules: {
-    'react/react-in-jsx-scope': 'off',
-    'import/order': [
-      'error',
-      {
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-        'newlines-between': 'always',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
+    plugins: {
+      react: eslintPluginReact,
+      'react-hooks': eslintPluginReactHooks,
+      'jsx-a11y': eslintPluginJsxA11y,
+      import: eslintPluginImport,
+      unicorn: eslintPluginUnicorn,
+    },
+    rules: {
+      'react/react-in-jsx-scope': 'off',
+      'import/order': [
+        'error',
+        {
+          groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+          'newlines-between': 'always',
+          alphabetize: {
+            order: 'asc',
+            caseInsensitive: true,
+          },
         },
+      ],
+      'unicorn/prevent-abbreviations': 'off',
+      'unicorn/filename-case': [
+        'error',
+        {
+          case: 'camelCase',
+        },
+      ],
+    },
+    settings: {
+      react: {
+        version: 'detect',
       },
-    ],
-    'unicorn/prevent-abbreviations': 'off',
-    'unicorn/filename-case': [
-      'error',
-      {
-        case: 'camelCase'
-      },
-    ],
-  },
-  settings: {
-    react: {
-      version: 'detect',
     },
   },
-  ignorePatterns: ['node_modules/', 'dist/', 'build/', 'stylelint.config.mjs'],
-};
+  {
+    ignores: ['node_modules/', 'dist/', 'build/', 'stylelint.config.mjs', 'tsconfig.json', 'tsconfig.build.json', 'tsconfig.eslint.json', 'vite.config.ts', 'postcss.config.cjs', 'package.json', '.prettierrc', 'commitlint.config.mjs'],
+  },
+];
 
 module.exports = config;

@@ -1,0 +1,9 @@
+/* mcbcTypescript/frontend/src/styles/mixins.scss */
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media only screen and (width >= 768px) {
+      @content;
+    }
+  }
+}

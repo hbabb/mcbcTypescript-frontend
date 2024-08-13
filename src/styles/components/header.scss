@@ -1,0 +1,70 @@
+/* mcbcTypscript/frontend/src/styles/components/header.scss */
+
+.header {
+  align-items: center;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.nav-list {
+  color: $color-darkblue;
+  display: flex;
+  gap: 5rem;
+}
+
+.nav-item {
+  color: $color-darkblue;
+  font-family: $font-roboto;
+  font-size: 1.25rem;
+  font-weight: 600;
+  list-style: none;
+
+  a,
+  .dropdown-trigger {
+    background: none; /* Remove button background */
+    border: none; /* Remove button border */
+    color: $color-darkblue;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0; /* Remove default button padding */
+    text-decoration: none;
+  }
+
+  a:hover,
+  .dropdown-trigger:hover {
+    text-decoration: underline;
+  }
+}
+
+.dropdown-content {
+  background-color: $color-white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 50%); /* Add a subtle shadow for the dropdown */
+  padding: 0.5rem;
+}
+
+.dropdown-item {
+  background-color: $color-lightgray;
+  color: $color-darkblue;
+  font-family: $font-roboto;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+
+  a {
+    color: $color-darkblue;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
