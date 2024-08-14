@@ -1,8 +1,39 @@
 /* mcbcTypescript/frontend/src/styles/components/lhpLogo.scss */
 
-.lhpLogo {
+.lhpLogo-container {
   align-items: center;
+  background-color: $color-white;
   display: flex;
+  height: 100%;
   justify-content: center;
-  width: 100%; // 100% width
+  width: 100%;
+}
+
+.lhpLogo {
+  margin-bottom: 0;
+}
+
+.lhpLogo-image {
+  height: auto;
+  width: 5rem;
+}
+
+.lhp-text {
+  margin-left: 1rem;
+  text-align: start;
+}
+
+.lhp-text h1 {
+  color: $color-lightblue;
+  font-family: $font-lobster;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.lhp-text p {
+  color: $color-lightblue;
+  font-family: $font-josefin-sans;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.5em;
 }
