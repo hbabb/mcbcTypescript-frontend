@@ -1,8 +1,37 @@
 /* mcbcTypescript/frontend/src/styles/components/mcbcLogo.scss */
 
-.mcbcLogo {
+.mcbcLogo-container {
   align-items: center;
+  background-color: $color-white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100%; // 100% width
+}
+
+.mcbcLogo {
+  margin-bottom: 0;
+}
+
+.mcbcLogo-image {
+  height: auto;
+  width: 16rem;
+}
+
+.mcbc-text {
+  text-align: center;
+}
+
+.mcbc-text h1 {
+  color: $color-darkblue;
+  font-family: $font-allura;
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+.mcbc-text p {
+  color: $color-black;
+  font-family: $font-roboto;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
 }

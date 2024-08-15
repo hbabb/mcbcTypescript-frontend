@@ -1,0 +1,21 @@
+/* mcbcTypescript/frontend/src/styles/components/messageFromPastor.scss */
+
+.message-from-pastor h1 {
+  font-family: $font-roboto;
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.message-from-pastor h2 {
+  font-family: $font-roboto;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.message-from-pastor p {
+  font-family: $font-roboto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: justify;
+}
