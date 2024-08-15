@@ -9,6 +9,14 @@
 @import './components/header';
 @import './components/mcbcLogo';
 @import './components/lhpLogo';
+@import './components/messageFromPastor';
+@import './components/prayerDirectorMessage';
+@import './components/prayerRequestForm';
+@import './components/prayerRequestList';
+@import './components/contactForm';
+
+// Import utilities
+@import 'utilities';
 
 // Import pages
 @import './pages/home';
