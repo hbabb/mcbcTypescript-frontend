@@ -1,12 +1,24 @@
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
   return (
     <NavigationMenu.Root className="header">
-      <NavigationMenu.List className="nav-list">
+      {/* Hamburger Menu for Mobile */}
+      <div className="hamburger" onClick={toggleMenu}>
+        &#9776; {/* Hamburger icon */}
+      </div>
+
+      {/* Single Navigation List for Both Desktop and Mobile */}
+      <NavigationMenu.List className={`nav-list ${isMenuOpen ? 'open' : ''}`}>
         <NavigationMenu.Item className="nav-item">
           <Link to="/">Home</Link>
         </NavigationMenu.Item>

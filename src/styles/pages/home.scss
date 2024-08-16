@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
 
-  @include respond-to-desktop {
+  @include respond-to-xxxl {
     flex-direction: row;
   }
 }
@@ -19,7 +19,7 @@
   padding: 0 1rem;
   width: 100%;
 
-  @include respond-to-xl {
+  @include respond-to-xxxl {
     flex-direction: row;
   }
 }
@@ -29,9 +29,10 @@
   padding: 0 0.25rem;
   width: 100%;
 
-  @include respond-to-desktop {
+  @include respond-to-xxxl {
     margin-bottom: 0;
-    width: 33%;
+    padding-right: 5rem;
+    width: 33.3333%;
   }
 }
 
@@ -43,8 +44,8 @@
   padding: 1rem;
   width: 100%;
 
-  @include respond-to-desktop {
+  @include respond-to-xxxl {
     margin-top: 5rem;
-    width: 66%;
+    width: 66.6667%;
   }
 }
