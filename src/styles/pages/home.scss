@@ -1,9 +1,50 @@
 /* mcbcTypescript/frontend/src/styles/pages/home.scss */
 
-.home {
+.page-container {
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+
+  @include respond-to-desktop {
+    flex-direction: row;
+  }
+}
+
+.home-container {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 0 1rem;
+  width: 100%;
+
+  @include respond-to-xl {
+    flex-direction: row;
+  }
+}
+
+.logo-container {
+  margin-bottom: 1rem;
+  padding: 0 0.25rem;
+  width: 100%;
+
+  @include respond-to-desktop {
+    margin-bottom: 0;
+    width: 33%;
+  }
+}
+
+.message-container {
+  border: 4px solid $color-darkblue;
+  border-radius: 1.5rem;
+  color: $color-black;
+  margin: 0 1rem;
+  padding: 1rem;
+  width: 100%;
+
+  @include respond-to-desktop {
+    margin-top: 5rem;
+    width: 66%;
+  }
 }

@@ -12,7 +12,7 @@ import mcbcLogoSrc from '../assets/images/TransparentLogoIcon.svg'
  *
  * @returns {JSX.Element} The Light House Prayer logo component.
  */
-export const lhpLogo: React.FC = () => {
+export const LhpLogo: React.FC = () => {
   return (
     <div className="lhpLogo-container">
       <div className="lhpLogo">
@@ -34,7 +34,7 @@ export const lhpLogo: React.FC = () => {
  *
  * @returns {JSX.Element} The Motlow Creek Baptist Church logo component.
  */
-export const mcbcLogo: React.FC = () => {
+export const McbcLogo: React.FC = () => {
   return (
     <div className="mcbcLogo-container">
       <div className="mcbcLogo">
