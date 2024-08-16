@@ -16,6 +16,10 @@
   font-family: $font-roboto;
   font-size: 1.25rem;
   font-weight: 600;
+
+  @include respond-to-xxxl {
+    padding-left: 2.5rem;
+  }
 }
 
 .construction {

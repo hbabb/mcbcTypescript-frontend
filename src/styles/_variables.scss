@@ -1,5 +1,8 @@
 /* mcbcTypescript/frontend/src/styles/variables.scss */
 
+// Import fonts
+@import '../assets/fonts/googleFonts';
+
 // Define color variables
 $color-lightgray: #c4d4dc;
 $color-lightblue: #0000a8;
@@ -13,4 +16,10 @@ $font-allura: 'Allura', cursive;
 $font-lobster: 'Lobster', cursive;
 $font-josefin-sans: 'Josefin Sans', sans-serif;
 
-// Define media query variables
+// Define breakpoint variables
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-xxl: 1440px;
+$breakpoint-xxxl: 1920px;

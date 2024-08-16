@@ -6,6 +6,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+
+  @include respond-to-mobile {
+    padding: 0 1rem;
+  }
+
+  @include respond-to-tablet {
+    padding: 0 2rem;
+  }
+
+  @include respond-to-desktop {
+    padding: 0 3rem;
+  }
 }
 
 .mcbcLogo {
@@ -14,24 +27,54 @@
 
 .mcbcLogo-image {
   height: auto;
-  width: 16rem;
+  max-width: 20rem;
+  width: 100%;
+
+  @include respond-to-tablet {
+    max-width: 15rem;
+  }
+
+  @include respond-to-mobile {
+    max-width: 10rem;
+  }
 }
 
 .mcbc-text {
   text-align: center;
-}
 
-.mcbc-text h1 {
-  color: $color-darkblue;
-  font-family: $font-allura;
-  font-size: 2.25rem;
-  font-weight: 500;
-}
+  // border: 4px solid $color-darkblue;
+  width: 100%;
 
-.mcbc-text p {
-  color: $color-black;
-  font-family: $font-roboto;
-  font-size: 1.25rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
+  h1 {
+    color: $color-darkblue;
+    font-family: $font-allura;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+
+    @include respond-to-mobile {
+      font-size: 2rem;
+    }
+
+    @include respond-to-tablet {
+      font-size: 2.5rem;
+    }
+  }
+
+  p {
+    color: $color-black;
+    font-family: $font-roboto;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.45rem;
+    margin: 0;
+
+    @include respond-to-mobile {
+      font-size: 0.75rem;
+    }
+
+    @include respond-to-tablet {
+      font-size: 0.875rem;
+    }
+  }
 }
