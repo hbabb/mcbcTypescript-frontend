@@ -1,16 +1,17 @@
 # Todo list
 
-- [x] TODO: Fix footer to bottom of page
-- [x] TODO: Fix header to top of page
-- [ ] TODO: Build logo components
-- [ ] TODO: Build messageFromPastor component
+- [X] TODO: Fix footer to bottom of page
+- [X] TODO: Fix header to top of page
+- [X] TODO: Build logo components
+- [X] TODO: Build messageFromPastor component
 - [ ] TODO: Build prayerDirectorMessage component
 - [ ] TODO: Build prayerRequest Form
-- [ ] TODO: Build contact form
+- [X] TODO: Build contact form
 - [ ] TODO: Build eventRegistration form
-- [ ] TODO: Build home page
+- [X] TODO: Build home page
 - [ ] TODO: Build about page
 - [ ] TODO: Build events page
 - [ ] TODO: Build blogs page
-- [ ] TODO: Build contact page
+- [X] TODO: Build contact page
+  - [ ] TODO: Add responsive design to contact page
 - [ ] TODO: Build prayer page

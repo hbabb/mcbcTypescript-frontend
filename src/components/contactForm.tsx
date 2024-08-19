@@ -46,7 +46,7 @@ const ContactForm: React.FC = () => {
         {({ isSubmitting }) => (
           <FormPrimitive.Root>
             <FormPrimitive.Field name="name" asChild>
-              <div>
+              <div className='form-field'>
                 <label htmlFor="name">Name</label>
                 <Field name="name" type="text" placeholder="Your Name" />
                 <ErrorMessage name="name" component="div" className="error" />
@@ -54,7 +54,7 @@ const ContactForm: React.FC = () => {
             </FormPrimitive.Field>
 
             <FormPrimitive.Field name="email" asChild>
-              <div>
+              <div className='form-field'>
                 <label htmlFor="email">Email</label>
                 <Field name="email" type="email" placeholder="Your Email" />
                 <ErrorMessage name="email" component="div" className="error" />
@@ -62,7 +62,7 @@ const ContactForm: React.FC = () => {
             </FormPrimitive.Field>
 
             <FormPrimitive.Field name="message" asChild>
-              <div>
+              <div className='form-field'>
                 <label htmlFor="message">Message</label>
                 <Field
                   name="message"

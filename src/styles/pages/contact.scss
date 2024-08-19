@@ -1,9 +1,135 @@
-/* mcbcTypescript/frontend/src/styles/pages/contact.scss */
-
-.contact {
-  align-items: center;
+.contactForm-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+
+  .background-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0.8;
+  }
+
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Glass effect for the contact form */
+  .contact-form, .contact-info-header {
+    position: relative;
+    padding: 2rem;
+    border-radius: 10px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Thin border to complete the glass look */
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Optional: Limit the max width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+
+    h2 {
+      margin-bottom: 1rem;
+      font-family: $font-josefin-sans;
+      font-size: 2.5rem;
+      color: $color-darkblue;
+    }
+    
+    .form-field {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+  
+      label {
+        margin-bottom: 0.5rem;
+        font-family: $font-josefin-sans;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: $color-darkblue;
+      }
+  
+      input, textarea {
+        width: 550px; /* Make all input fields and textarea full width */
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid $color-lightgray;
+        font-size: 1rem;
+        background-color: $color-lightgray;
+      }
+  
+      textarea {
+        height: 250px; /* Make the message box taller */
+      }
+    }
+  }
+
+  button[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $color-white;
+    background: linear-gradient(145deg, $color-darkblue 0%, lighten($color-darkblue, 10%) 50%, darken($color-darkblue, 10%) 100%);
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  
+    &:hover {
+      background: linear-gradient(145deg, darken($color-darkblue, 10%) 0%, $color-darkblue 50%, lighten($color-darkblue, 10%) 100%);
+    }
+  
+    &:disabled {
+      background: lighten($color-darkblue, 20%);
+      cursor: not-allowed;
+    }
+  }
+  
+  
+
+  .contact-info-header {
+    margin-left: 10rem;
+
+    h2 {
+      font-family: $font-josefin-sans;
+      font-weight: 900;
+      font-size: 2rem;
+      color: $color-darkblue;
+      text-align: center;
+    } 
+
+    table {
+      font-family: $font-josefin-sans;
+      color: $color-darkblue;
+
+      th, td {
+        border: 4px solid $color-lightgray;
+        padding: 10px;
+      }
+
+      th {
+        background-color: $color-darkblue;
+        color: $color-white;
+        text-align: right;
+      }
+    }
+  }
 }

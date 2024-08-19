@@ -52,9 +52,6 @@ export const Header: React.FC = () => {
           <Link to="/events">Events</Link>
         </NavigationMenu.Item>
         <NavigationMenu.Item className="nav-item">
-          <Link to="/originalApp">Original App</Link>
-        </NavigationMenu.Item>
-        <NavigationMenu.Item className="nav-item">
           <Link to="/contact">Contact</Link>
         </NavigationMenu.Item>
       </NavigationMenu.List>

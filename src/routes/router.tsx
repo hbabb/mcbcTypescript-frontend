@@ -14,7 +14,7 @@ const Events = React.lazy(() => import('../pages/events'))
 const Blogs = React.lazy(() => import('../pages/blogs'))
 const EventPost = React.lazy(() => import('../pages/eventPost'))
 const BlogPost = React.lazy(() => import('../pages/blogPost'))
-const OriginalApp = React.lazy(() => import('../pages/originalApp'))
+const Contact = React.lazy(() => import('../pages/contact'))
 
 const AppRouter: React.FC = () => {
   return (
@@ -29,7 +29,7 @@ const AppRouter: React.FC = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/eventPost" element={<EventPost />} />
         <Route path="/blogPost" element={<BlogPost />} />
-        <Route path="/originalApp" element={<OriginalApp />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Suspense>
   )
