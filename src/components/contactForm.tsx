@@ -32,7 +32,7 @@ const ContactForm: React.FC = () => {
     { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void },
   ) => {
     try {
-      const response = await fetch('${process.env.REACT_APP_API_URL}/contact', {
+      const response = await fetch('${process.env.REACT_APP_API_URL}/contact-form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values),
