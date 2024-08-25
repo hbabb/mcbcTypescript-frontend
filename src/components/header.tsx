@@ -3,6 +3,8 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+// import '../styles/components/header.scss'
+
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 

@@ -4,6 +4,8 @@
   background-color: $color-white;
   display: flex;
   flex-direction: column;
+  flex-grow: 2;
+  // border: 4px solid yellow;
 
   @include respond-to-xxxl {
     flex-direction: row;

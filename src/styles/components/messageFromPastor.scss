@@ -1,4 +1,6 @@
 /* mcbcTypescript/frontend/src/styles/components/messageFromPastor.scss */
+@import '../variables';
+@import '../mixins';
 
 .message-from-pastor h1 {
   font-family: $font-roboto;

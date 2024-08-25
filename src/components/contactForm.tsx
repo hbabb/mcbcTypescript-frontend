@@ -31,9 +31,26 @@ const ContactForm: React.FC = () => {
     values: typeof initialValues,
     { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void },
   ) => {
-    // Handle form submission here
-    console.log('Form Submitted:', values)
-    setSubmitting(false)
+    try {
+      const response = await fetch('${process.env.REACT_APP_API_URL}/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(values),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
+
+      const data = await response.json()
+      console.log('Message sent successfully:', data)
+      alert('Message sent successfully!')
+    } catch (error) {
+      console.error('Failed to send message:', error)
+      alert('Failed to send message. Please try again later.')
+    } finally {
+      setSubmitting(false)
+    }
   }
   return (
     <div className="contact-form">
@@ -46,7 +63,7 @@ const ContactForm: React.FC = () => {
         {({ isSubmitting }) => (
           <FormPrimitive.Root>
             <FormPrimitive.Field name="name" asChild>
-              <div className='form-field'>
+              <div className="form-field">
                 <label htmlFor="name">Name</label>
                 <Field name="name" type="text" placeholder="Your Name" />
                 <ErrorMessage name="name" component="div" className="error" />
@@ -54,7 +71,7 @@ const ContactForm: React.FC = () => {
             </FormPrimitive.Field>
 
             <FormPrimitive.Field name="email" asChild>
-              <div className='form-field'>
+              <div className="form-field">
                 <label htmlFor="email">Email</label>
                 <Field name="email" type="email" placeholder="Your Email" />
                 <ErrorMessage name="email" component="div" className="error" />
@@ -62,7 +79,7 @@ const ContactForm: React.FC = () => {
             </FormPrimitive.Field>
 
             <FormPrimitive.Field name="message" asChild>
-              <div className='form-field'>
+              <div className="form-field">
                 <label htmlFor="message">Message</label>
                 <Field
                   name="message"

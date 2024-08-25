@@ -1,9 +1,9 @@
 // mcbc-react-ts/stylelint.config.mjs
 /** @type {import('stylelint').Config} */
-import stylelintConfigStandardScss from 'stylelint-config-standard-scss';
-import stylelintOrder from 'stylelint-order';
-import stylelintScss from 'stylelint-scss';
-import stylelintPrettier from 'stylelint-prettier';
+import stylelintConfigStandardScss from 'stylelint-config-standard-scss'
+import stylelintOrder from 'stylelint-order'
+import stylelintScss from 'stylelint-scss'
+import stylelintPrettier from 'stylelint-prettier'
 
 export default {
   extends: [
@@ -24,7 +24,6 @@ export default {
 
     // Disable the no-descending-specificity rule as it is not compatible with Prettier
     'no-descending-specificity': null,
-    
 
     // SCSS-specific rules
     'scss/at-extend-no-missing-placeholder': true,
@@ -33,5 +32,19 @@ export default {
     'scss/dollar-variable-pattern': '^[a-z][a-z0-9-]+$',
     'scss/operator-no-unspaced': true,
   },
-  ignoreFiles: ['node_modules/**/*', 'dist/**/*.css', 'TODO.md', 'Notes.md', 'stylelint.config.mjs', 'tsconfig.json', 'tsconfig.build.json', 'tsconfig.eslint.json', 'vite.config.ts', 'postcss.config.cjs', 'package.json', '.prettierrc', 'commitlint.config.mjs'], // Ignore specific folders
-};
+  ignoreFiles: [
+    'node_modules/**/*',
+    'dist/**/*.css',
+    'TODO.md',
+    'Notes.md',
+    'stylelint.config.mjs',
+    'tsconfig.json',
+    'tsconfig.build.json',
+    'tsconfig.eslint.json',
+    'vite.config.ts',
+    'postcss.config.cjs',
+    'package.json',
+    '.prettierrc',
+    'commitlint.config.mjs',
+  ], // Ignore specific folders
+}

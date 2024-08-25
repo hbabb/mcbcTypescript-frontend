@@ -1,11 +1,11 @@
 // mcbcTypescript/eslint.config.cjs
 
-const eslintPluginReact = require('eslint-plugin-react');
-const eslintPluginReactHooks = require('eslint-plugin-react-hooks');
-const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y');
-const eslintPluginImport = require('eslint-plugin-import');
-const eslintPluginUnicorn = require('eslint-plugin-unicorn');
-const typescriptEslintParser = require('@typescript-eslint/parser');
+const eslintPluginReact = require('eslint-plugin-react')
+const eslintPluginReactHooks = require('eslint-plugin-react-hooks')
+const eslintPluginJsxA11y = require('eslint-plugin-jsx-a11y')
+const eslintPluginImport = require('eslint-plugin-import')
+const eslintPluginUnicorn = require('eslint-plugin-unicorn')
+const typescriptEslintParser = require('@typescript-eslint/parser')
 
 /** @type {import('eslint').FlatConfig[]} */
 const config = [
@@ -28,7 +28,14 @@ const config = [
       'import/order': [
         'error',
         {
-          groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            'parent',
+            'sibling',
+            'index',
+          ],
           'newlines-between': 'always',
           alphabetize: {
             order: 'asc',
@@ -51,8 +58,21 @@ const config = [
     },
   },
   {
-    ignores: ['node_modules/', 'dist/', 'build/', 'stylelint.config.mjs', 'tsconfig.json', 'tsconfig.build.json', 'tsconfig.eslint.json', 'vite.config.ts', 'postcss.config.cjs', 'package.json', '.prettierrc', 'commitlint.config.mjs'],
+    ignores: [
+      'node_modules/',
+      'dist/',
+      'build/',
+      'stylelint.config.mjs',
+      'tsconfig.json',
+      'tsconfig.build.json',
+      'tsconfig.eslint.json',
+      'vite.config.ts',
+      'postcss.config.cjs',
+      'package.json',
+      '.prettierrc',
+      'commitlint.config.mjs',
+    ],
   },
-];
+]
 
-module.exports = config;
+module.exports = config
