@@ -5,6 +5,8 @@ import { McbcLogo } from '../components/logos'
 import MessageFromPastor from '../components/messageFromPastor'
 // import SEO from '../components/seo'
 
+// import '../styles/pages/home.module.scss'
+
 const Home: React.FC = () => {
   return (
     <div className="page-container">

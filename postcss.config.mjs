@@ -8,13 +8,13 @@ export default {
       importFrom: [
         {
           customMedia: {
-            'mobile': '(max-width: 480px)',
-            'tablet': '(min-width: 481px) and (max-width: 1023px)',
-            'desktop': '(min-width: 1024px) and (max-width: 1279px)',
-            'wide': '(min-width: 1280px)',
+            mobile: '(max-width: 480px)',
+            tablet: '(min-width: 481px) and (max-width: 1023px)',
+            desktop: '(min-width: 1024px) and (max-width: 1279px)',
+            wide: '(min-width: 1280px)',
+          },
         },
-      },
-    ],
+      ],
     },
     'postcss-flexbugs-fixes': {},
     'postcss-import': {},

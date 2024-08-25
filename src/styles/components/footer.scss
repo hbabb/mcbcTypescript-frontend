@@ -7,15 +7,16 @@
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
-  margin-top: auto;
+  // margin-top: auto;
   width: 100%;
+  z-index: 1000;
 }
 
 .copyright {
-  color: $color-black;
+  color: $color-darkblue;
   font-family: $font-roboto;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 900;
 
   @include respond-to-xxxl {
     padding-left: 2.5rem;
@@ -39,5 +40,5 @@
 }
 
 .social-icons a:hover {
-  color: $color-lightgray;
+  color: $color-darkblue;
 }

@@ -2,12 +2,14 @@
 import React from 'react'
 import { FaFacebook } from 'react-icons/fa'
 
+// import '../styles/components/footer.scss'
+
 export const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <section className="copyright">
         <p>
-          &copy; {new Date().getFullYear()}Motlow Creek Baptist Church. All
+          &copy; {new Date().getFullYear()} Motlow Creek Baptist Church. All
           Rights Reserved.{' '}
           <em className="construction">Under Construction...</em>
         </p>

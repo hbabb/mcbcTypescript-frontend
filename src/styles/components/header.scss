@@ -1,12 +1,16 @@
+/* mcbcTypescript/frontend/src/styles/header.scss */
+@import '../variables';
+@import '../mixins';
+
 .header {
   align-items: center;
   align-self: flex-start;
-  background-color: $color-white;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1rem;
-  width: 100%;
+  // padding: 1rem;
+  width: 100svw;
   z-index: 1000;
 }
 

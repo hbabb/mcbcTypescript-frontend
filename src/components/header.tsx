@@ -3,6 +3,8 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+// import '../styles/components/header.scss'
+
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -50,9 +52,6 @@ export const Header: React.FC = () => {
         </NavigationMenu.Item>
         <NavigationMenu.Item className="nav-item">
           <Link to="/events">Events</Link>
-        </NavigationMenu.Item>
-        <NavigationMenu.Item className="nav-item">
-          <Link to="/originalApp">Original App</Link>
         </NavigationMenu.Item>
         <NavigationMenu.Item className="nav-item">
           <Link to="/contact">Contact</Link>

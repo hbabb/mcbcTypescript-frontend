@@ -4,6 +4,9 @@ import React from 'react'
 import lhpLogoSrc from '../assets/images/LHPTransparentLogo.svg'
 import mcbcLogoSrc from '../assets/images/TransparentLogoIcon.svg'
 
+// import '../styles/components/lhpLogo.scss'
+// import '../styles/components/mcbcLogo.scss'
+
 /**
  * Component for Light House Prayer Logo
  *

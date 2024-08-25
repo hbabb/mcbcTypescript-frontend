@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 
 import useFetch from '../hooks/useFetch'
 
+import '../styles/components/messageFromPastor.scss'
+
 type BlockType = {
   type: string
   level?: number
